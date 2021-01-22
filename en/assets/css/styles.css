@@ -27,7 +27,7 @@
 
 .logo { margin-right: 50px; display: flex; justify-content: flex-start; flex-direction: row; align-items: center; }
 
-.header-navigation-wrapper .schedule-meeting-button { margin-left: 50px; }
+.header-navigation-wrapper .schedule-meeting-button { margin-left: 50px; height: 28px; }
 
 nav { display: flex; align-items: center; flex-grow: 1; flex-shrink: 0; }
 
@@ -92,6 +92,8 @@ p { font-style: normal; font-weight: normal; line-height: 1.375; margin: 0 0 1.5
 .main .author { margin-bottom: 2em; }
 
 .testimonial { margin-bottom: 3em; text-transform: uppercase; }
+
+@media (max-width: 640px) { .testimonial { font-size: 1.5rem !important; line-height: 28px; margin-bottom: 1.5em; } }
 
 /* Business domain */
 .business-domain { text-align: center; }
