@@ -1,1 +1,4 @@
-Sitemap: /pl/sitemap.xml
+User-agent: *
+Disallow: /assets/
+Disallow: /cookies-policy.html
+Disallow: /privacy-policy.html

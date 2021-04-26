@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>/pl/</loc>
-</url>
-<url>
-<loc>/pl/redirect.html</loc>
-<lastmod>2021-01-21T15:05:40+01:00</lastmod>
+ <loc>https://iterative.engineering/</loc>
+ <changefreq>monthly</changefreq>
+ <priority>1</priority>
 </url>
 </urlset>
