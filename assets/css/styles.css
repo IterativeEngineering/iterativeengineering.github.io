@@ -81,7 +81,7 @@ nav a:hover { color: #80deea; }
 
 nav .active { color: #3B93AD; font-weight: bold; }
 
-.item { display: flex; flex-direction: row; position: relative; height: 100%; align-items: center; margin-right: 24px; display: none; }
+.item { display: flex; flex-direction: row; position: relative; height: 100%; align-items: center; margin-right: 24px; }
 
 .item a { font-size: 14px; }
 
