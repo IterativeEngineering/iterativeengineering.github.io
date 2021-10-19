@@ -277,29 +277,29 @@ html[lang="en"] .bg-possibilities:after { content: "possibilities"; }
 
 .client-flex-items { display: flex; flex-direction: column; }
 
-@media (max-width: 900px) { .client-flex-items { flex-direction: row; justify-content: center; } }
+@media (max-width: 1055px) { .client-flex-items { flex-direction: row; justify-content: center; } }
 
 .client-flex-items > .client-logo-list:first-of-type { margin-bottom: 40px; }
 
-@media (max-width: 900px) { .client-flex-items > .client-logo-list:first-of-type { margin-bottom: 0; } }
+@media (max-width: 1055px) { .client-flex-items > .client-logo-list:first-of-type { margin-bottom: 0; } }
 
 .client-logo-list { display: flex; justify-content: space-between; }
 
-@media (max-width: 900px) { .client-logo-list { flex-direction: column; } .client-logo-list:first-of-type { margin-right: 80px; } }
+@media (max-width: 1055px) { .client-logo-list { flex-direction: column; } .client-logo-list:first-of-type { margin-right: 80px; } }
 
 @media (max-width: 790px) { .client-logo-list:first-of-type { margin-right: 50px; } }
 
 @media (max-width: 640px) { .client-logo-list { width: calc((100vw - 40px) / 2); } .client-logo-list:first-of-type { margin-right: 0; } }
 
-.client-logo { height: 75px; display: flex; align-items: center; justify-content: center; }
+.client-logo { height: 70px; display: flex; align-items: center; justify-content: center; }
 
-.client-logo svg { height: 75px; }
+.client-logo svg { height: 70px; }
 
 @media (max-width: 1280px) { .client-logo { transform: scale(0.9); } }
 
-@media (max-width: 1024px) { .client-logo { transform: scale(0.8); } }
+@media (max-width: 1090px) { .client-logo { transform: scale(0.8); } }
 
-@media (max-width: 900px) { .client-logo { transform: scale(1); } .client-logo:not(:last-child) { margin-bottom: 40px; } }
+@media (max-width: 1055px) { .client-logo { transform: scale(1); } .client-logo:not(:last-child) { margin-bottom: 40px; } }
 
 @media (max-width: 790px) { .client-logo { transform: scale(0.9); } }
 
@@ -309,7 +309,7 @@ html[lang="en"] .bg-possibilities:after { content: "possibilities"; }
 
 #healthly svg { height: 60px; }
 
-#info-group svg { height: 55px; }
+#info-group svg { height: 50px; }
 
 /* Background svg */
 .bg-pattern img { width: 493px; height: 100%; position: absolute; right: 0%; z-index: -1; mask-image: linear-gradient(67deg, rgba(2, 0, 36, 0) 0%, rgba(0, 0, 0, 0) 25%, black 100%); -webkit-mask-image: linear-gradient(67deg, rgba(2, 0, 36, 0) 0%, rgba(0, 0, 0, 0) 25%, black 100%); }
