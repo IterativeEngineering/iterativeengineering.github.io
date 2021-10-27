@@ -702,13 +702,13 @@ address { font-style: normal; }
 
 @media (max-width: 510px) { .footer-contact-person, .footer-contact-phone, .footer-contact-mail, .footer-address { padding-left: 18px; } .footer-contact-person::before, .footer-contact-phone::before, .footer-contact-mail::before, .footer-address::before { height: 12px; width: 12px; transform: translate(-18px, 6px); } }
 
-.footer-copyright-styles { display: flex; margin-top: auto; background-color: black; height: 45px; color: var(--text-gray); font-family: Open Sans; font-style: normal; font-weight: 600; font-size: 10px; line-height: 14px; }
+.footer-copyright-styles { display: flex; margin-top: auto; background-color: black; min-height: 45px; color: var(--text-gray); font-family: Open Sans; font-style: normal; font-weight: 600; font-size: 10px; line-height: 14px; }
 
-.footer-copyright-styles span { padding-right: 50px; }
+.footer-copyright-styles span { padding-right: 50px; margin: 5px 0; }
 
 .footer-copyright-styles span a { text-decoration-line: underline; color: var(--text-gray); }
 
-@media (max-width: 580px) { .footer-copyright-styles { height: 72px; } .footer-copyright-styles span { margin: 5px 0; } }
+@media (max-width: 520px) { .footer-copyright-styles { min-height: 80px; } .footer-copyright-styles span { padding-right: 0; } }
 
 .copyright-wrapper { display: flex; width: 100%; max-width: 1280px; margin: 0px auto; padding: 0 24px; align-content: center; }
 
@@ -719,6 +719,8 @@ address { font-style: normal; }
 .policy-links > span:first-child { padding-right: 10px; }
 
 .policy-links > span:first-child::after { position: relative; content: '|'; padding-left: 10px; }
+
+.legal-numbers { display: inline-flex; overflow-wrap: break-word; }
 
 .swiper-slide { display: flex; }
 
