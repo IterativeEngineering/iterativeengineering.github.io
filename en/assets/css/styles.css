@@ -609,17 +609,17 @@ address { font-style: normal; }
 
 .footer-wrapper { display: flex; flex-direction: column; width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 24px; }
 
-.footer-contact-wrapper { position: relative; width: 100%; }
+.footer-section-wrapper { position: relative; width: 100%; }
 
-.footer-contact-wrapper::after { position: absolute; top: 15%; right: 0; content: ""; display: block; width: 90px; height: 90px; border-top: 25px solid #989898; border-right: 25px solid #989898; }
+.footer-section-wrapper::after { position: absolute; top: 15%; right: 0; content: ""; display: block; width: 90px; height: 90px; border-top: 25px solid #989898; border-right: 25px solid #989898; }
 
-@media (max-width: 1024px) { .footer-contact-wrapper::after { top: 1%; right: -21px; transform: scale(0.5); } }
+@media (max-width: 1024px) { .footer-section-wrapper::after { top: 1%; right: -21px; transform: scale(0.5); } }
 
-@media (max-width: 510px) { .footer-contact-wrapper { font-size: 12px; line-height: 1.5; } }
+@media (max-width: 510px) { .footer-section-wrapper { font-size: 12px; line-height: 1.5; } }
 
-.footer-contact-wrapper .schedule-meeting-button a { padding: 7.5px 30px; border: 1px solid white; font-size: 12px; }
+.footer-section-wrapper .schedule-meeting-button a { padding: 7.5px 30px; border: 1px solid white; font-size: 12px; }
 
-@media (max-width: 510px) { .footer-contact-wrapper .schedule-meeting-button { height: 30px; line-height: 1.5; white-space: nowrap; } .footer-contact-wrapper .schedule-meeting-button a { font-size: 10px; line-height: 2; padding: 5px 25px; } }
+@media (max-width: 510px) { .footer-section-wrapper .schedule-meeting-button { height: 30px; line-height: 1.5; white-space: nowrap; } .footer-section-wrapper .schedule-meeting-button a { font-size: 10px; line-height: 2; padding: 5px 25px; } }
 
 .footer-segment-wrapper { display: flex; }
 
@@ -629,9 +629,13 @@ address { font-style: normal; }
 
 @media (max-width: 320px) { .footer-img { margin-right: 10px; } }
 
-.footer-contact { margin-top: 100px; display: flex; flex-wrap: wrap; }
+.footer-section { margin-top: 100px; display: flex; flex-wrap: wrap; }
 
-@media (max-width: 1024px) { .footer-contact { margin-top: 50px; } }
+@media (max-width: 1024px) { .footer-section { margin-top: 50px; } }
+
+.footer-section ul { padding: 0; margin-right: 30px; list-style-type: none; line-height: 200%; }
+
+.footer-section a { color: #989898; }
 
 .footer-contact-info { display: flex; flex-direction: column; color: #989898; font-style: normal; line-height: 1.8; margin: 0 0 35px 0; }
 
