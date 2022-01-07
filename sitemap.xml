@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+<url>
+	<loc>https://iterative.engineering/about.html</loc>
+	<lastmod>2022-01-07T17:33:47+01:00</lastmod>
+	<xhtml:link rel="alternate" hreflang="en" href="https://iterative.engineering/about.html">
+	<xhtml:link rel="alternate" hreflang="pl" href="https://iterative.engineering/pl/about.html">	
+</url>
+
+<url>
+	<loc>https://iterative.engineering/cookies-policy.html</loc>
+	<lastmod>2022-01-07T17:33:47+01:00</lastmod>
+	<xhtml:link rel="alternate" hreflang="en" href="https://iterative.engineering/cookies-policy.html">
+	<xhtml:link rel="alternate" hreflang="pl" href="https://iterative.engineering/pl/cookies-policy.html">	
+</url>
+
+<url>
+	<loc>https://iterative.engineering/</loc>
+	<lastmod>2022-01-07T17:33:47+01:00</lastmod>
+	<xhtml:link rel="alternate" hreflang="en" href="https://iterative.engineering/">
+	<xhtml:link rel="alternate" hreflang="pl" href="https://iterative.engineering/pl/">	
+</url>
+
+<url>
+	<loc>https://iterative.engineering/privacy-policy.html</loc>
+	<lastmod>2022-01-07T17:33:47+01:00</lastmod>
+	<xhtml:link rel="alternate" hreflang="en" href="https://iterative.engineering/privacy-policy.html">
+	<xhtml:link rel="alternate" hreflang="pl" href="https://iterative.engineering/pl/privacy-policy.html">	
+</url>
+
+<url>
+	<loc>https://iterative.engineering/software-development-for-london-based-companies.html</loc>
+	<lastmod>2022-01-07T17:33:47+01:00</lastmod>	
+</url>
