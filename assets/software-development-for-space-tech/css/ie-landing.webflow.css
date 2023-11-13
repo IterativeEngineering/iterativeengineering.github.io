@@ -53,7 +53,7 @@ h3 {
 
 .graph_section.space {
   background-color: #7cabba;
-  background-image: linear-gradient(315deg, #000, rgba(0, 0, 0, 0)), url('../images/Start_BG.png');
+  background-image: linear-gradient(315deg, #000, rgba(0, 0, 0, 0)), url('../images/Start_BG.webp');
   background-position: 0 0, 0%;
   background-repeat: repeat, no-repeat;
   background-size: auto, cover;
@@ -242,7 +242,7 @@ h3 {
 }
 
 .contact_graph.kg {
-  background-image: url('../images/KG_BT_DB_male.png');
+  background-image: url('../images/KG_BT_DB_male.webp');
   background-position: 0%;
   background-repeat: no-repeat;
   background-size: contain;
@@ -252,7 +252,7 @@ h3 {
 
 .kg_contact_section {
   background-color: #eff4f7;
-  background-image: url('../images/Pattern.png');
+  background-image: url('../images/Pattern.webp');
   background-position: 100%;
   background-repeat: no-repeat;
   background-size: auto 100%;
@@ -747,7 +747,7 @@ h3 {
 
 .team_photo {
   width: 50%;
-  background-image: url('../images/IE_01.png');
+  background-image: url('../images/IE_01.webp');
   background-position: 70% 0;
   background-size: cover;
   border-radius: 2px;
@@ -3506,7 +3506,7 @@ h3 {
 
   .contact_text {
     width: 90vw;
-    background-image: url('../images/KG_BT_DB_male.png');
+    background-image: url('../images/KG_BT_DB_male.webp');
     background-position: 0 0;
     background-repeat: no-repeat;
     background-size: 25.9vw;
