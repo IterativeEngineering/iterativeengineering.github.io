@@ -1,0 +1,4742 @@
+:root {
+  --text_01: #0c1d23;
+  --blue_bg: #ebf4f7;
+  --gray_bg: #eef1f2;
+  --text_02: #546065;
+  --white: #fdfefe;
+  --violet: #5f67aa;
+}
+
+.w-layout-grid {
+  grid-row-gap: 16px;
+  grid-column-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+}
+
+body {
+  color: var(--text_01);
+  font-family: Alexandria Variablefont Wght, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 30px;
+}
+
+.graph_section {
+  width: auto;
+  height: 100vh;
+  background-color: #cee4eb;
+  background-image: url('../images/London_city_02.svg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: auto 50vh;
+  padding-left: 5vw;
+  padding-right: 5vw;
+}
+
+.graph_section.renewables {
+  background-image: url('../images/Turbine_skyline.svg');
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.graph_section.space {
+  background-color: #7cabba;
+  background-image: linear-gradient(315deg, #000, rgba(0, 0, 0, 0)), url('../images/Start_BG.png');
+  background-position: 0 0, 0%;
+  background-repeat: repeat, no-repeat;
+  background-size: auto, cover;
+}
+
+.graph_text {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reasons_tiles {
+  max-width: 1536px;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template: "Area Area-2"
+                 "Area-3 Area-4"
+                 / 1fr 1fr;
+  grid-auto-flow: row;
+  margin: 0 auto;
+}
+
+.blue_box {
+  height: auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  background-color: var(--blue_bg);
+  border-radius: 2px;
+  align-items: center;
+  margin: 0;
+  padding: 24px;
+  display: flex;
+}
+
+.blue_box.offer {
+  grid-column-gap: 1.7vw;
+  grid-row-gap: 0px;
+  padding: 1.7vw;
+}
+
+.blue_box.renewables_solutions {
+  width: 50%;
+}
+
+.blue_box.renewables_solutions.mobi {
+  display: none;
+}
+
+.blue_box.pad_l_0 {
+  width: 100%;
+  padding-left: 0;
+}
+
+.reason_image {
+  height: 64px;
+  max-width: none;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.reason_text {
+  grid-row-gap: 16px;
+  border-radius: 5px;
+  flex-direction: column;
+  flex: 0 auto;
+  display: flex;
+}
+
+.indicators_separator {
+  width: 1px;
+  height: 96px;
+  background-color: #fff;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.testimonial_icon {
+  height: 64px;
+  object-fit: fill;
+  position: static;
+}
+
+.testimonials_nav {
+  height: 16px;
+  color: #5e4545;
+  background-color: rgba(80, 54, 54, 0);
+  border: 1px solid rgba(209, 94, 94, 0);
+  padding-top: 0;
+}
+
+.arrow_r {
+  height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: auto;
+  right: 0;
+}
+
+.testimonial_text {
+  background-color: var(--gray_bg);
+  border-top-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  flex: 1;
+  padding: 32px 64px 64px 32px;
+}
+
+.testimonial_slide {
+  background-color: #fff;
+}
+
+.testimonials_slider {
+  height: auto;
+  max-height: none;
+  background-color: rgba(175, 175, 175, 0);
+  margin-top: -32px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials_mask {
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-bottom: 16px;
+}
+
+.arrow_l {
+  height: 24px;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  left: 0;
+  right: auto;
+  transform: rotate(180deg);
+}
+
+.testimonial_photo {
+  height: 64px;
+  border-radius: 2px;
+  margin-bottom: 16px;
+  margin-right: auto;
+}
+
+.testimonial_box {
+  grid-column-gap: 32px;
+  border: 1px solid var(--text_02);
+  box-shadow: none;
+  background-color: #fff;
+  border-radius: 2px;
+  align-items: stretch;
+  margin: 32px;
+  padding: 32px;
+  display: flex;
+}
+
+.right-arrow {
+  width: 24px;
+  background-color: rgba(255, 255, 255, 0);
+  display: flex;
+}
+
+.left-arrow {
+  width: 24px;
+  background-color: rgba(255, 255, 255, 0);
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: auto;
+}
+
+.contact_graph {
+  width: 33%;
+  flex-wrap: nowrap;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  align-content: stretch;
+  display: block;
+}
+
+.contact_graph.kg {
+  background-image: url('../images/KG_BT_DB_male.png');
+  background-position: 0%;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: -32px;
+  margin-bottom: -48px;
+}
+
+.kg_contact_section {
+  background-color: #eff4f7;
+  background-image: url('../images/Pattern.png');
+  background-position: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  flex-direction: row;
+  align-items: stretch;
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+}
+
+.footer_section {
+  height: 48px;
+  grid-column-gap: 7px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.graph_text_01 {
+  max-width: 1440px;
+  color: #fff;
+  letter-spacing: 5.5px;
+  text-transform: none;
+  margin-top: 0;
+  margin-bottom: 32px;
+  padding-top: 160px;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 100%;
+  position: relative;
+}
+
+.graph_text_02 {
+  max-width: 1440px;
+  color: var(--white);
+  letter-spacing: 11px;
+  font-size: 88px;
+  font-weight: 800;
+  line-height: 100%;
+  position: relative;
+}
+
+.graph_text_02.renewables_desktop {
+  letter-spacing: 9.875px;
+  font-size: 79px;
+}
+
+.graph_text_02.renewables_mobi {
+  letter-spacing: 9.875px;
+  font-size: 79px;
+  display: none;
+}
+
+.navbar_background {
+  width: 100vw;
+  height: 64px;
+  background-color: var(--white);
+  box-shadow: none;
+  border: 0 solid #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  display: flex;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.navbar {
+  width: 100vw;
+  height: 64px;
+  box-shadow: none;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0 solid #000;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5vw;
+  display: block;
+  position: fixed;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+}
+
+.button_menu {
+  height: 32px;
+  color: #fff;
+  text-align: center;
+  background-color: #5f67aa;
+  padding: 0 32px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+  text-decoration: none;
+  transition: background-color .2s;
+  position: static;
+  top: 0%;
+  bottom: 0%;
+  left: auto;
+  right: 0%;
+}
+
+.button_menu:hover {
+  background-color: #515891;
+}
+
+.navbar_shadow {
+  height: 64px;
+  position: absolute;
+  top: 0%;
+  bottom: auto;
+  left: 0%;
+  right: 0%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+}
+
+.brand {
+  padding-left: 0;
+}
+
+.logo_dark {
+  width: 135.891px;
+  height: 24px;
+}
+
+.navbar_next {
+  width: 100%;
+  max-width: 1440px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.body {
+  background-color: var(--white);
+}
+
+.heading_03 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.heading_03.testimonial {
+  justify-content: flex-start;
+}
+
+.heading_03.space_solutions {
+  text-align: center;
+}
+
+.sep_1-3_1-6 {
+  width: 42.6667px;
+  height: 2px;
+  background-color: #5f67aa;
+  margin-top: 21.3333px;
+  margin-bottom: 21.3333px;
+}
+
+.sep_1-3_1-6.cen {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  grid-template-rows: auto auto;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-columns: 1fr;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+}
+
+.sep_1-3_1-6.cen.white {
+  background-color: var(--white);
+}
+
+.heading_01 {
+  color: var(--text_01);
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.heading_01.le {
+  text-align: left;
+}
+
+.heading_01.space_quotes {
+  color: var(--white);
+}
+
+.heading_01.space_value {
+  text-align: left;
+}
+
+.div_top_1-3 {
+  margin-top: 42.6667px;
+}
+
+.div_top_1-3.space_why {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+.div_top_1-3.space_why.mobi {
+  display: none;
+}
+
+.div_top_1-3.space_quotes {
+  grid-column-gap: 96px;
+  grid-row-gap: 96px;
+  display: flex;
+}
+
+.section {
+  grid-column-gap: 128px;
+  grid-row-gap: 128px;
+  flex-direction: column;
+  margin-top: 0;
+  padding: 128px 5%;
+  display: flex;
+}
+
+.section.grey {
+  background-color: #edf1f2;
+}
+
+.section.grey.space_offer {
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.section.pad_lr_0 {
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  flex-direction: row;
+  padding-bottom: 0;
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.div_general {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div_general.con {
+  display: flex;
+}
+
+.div_general.renewable_mobi {
+  display: none;
+}
+
+.paragraph_01 {
+  color: var(--text_02);
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.paragraph_01.in {
+  color: var(--white);
+  text-align: center;
+  font-weight: 700;
+}
+
+.paragraph_01.reasons {
+  height: auto;
+}
+
+.paragraph_01.head_cen {
+  text-align: center;
+}
+
+.paragraph_01.testimonial {
+  text-align: center;
+  margin-top: -32px;
+  margin-left: 32px;
+}
+
+.paragraph_01.con_link {
+  text-decoration: none;
+}
+
+.paragraph_01.con_link:hover {
+  color: var(--text_01);
+}
+
+.paragraph_01.quote_pg {
+  margin-top: -64px;
+  margin-left: 32px;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 150%;
+}
+
+.paragraph_01.quote_pg.dark {
+  color: var(--text_01);
+  text-align: center;
+  margin-top: 0;
+  margin-left: 0;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.paragraph_01.space_services {
+  text-align: center;
+}
+
+.paragraph_01.space_services.dark {
+  color: var(--text_01);
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.paragraph_01.space_value_quote_name {
+  color: var(--text_01);
+  font-weight: 700;
+}
+
+.paragraph_02 {
+  color: var(--text_02);
+  text-align: left;
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.paragraph_02.con {
+  color: #546065;
+  text-align: center;
+  font-weight: 400;
+}
+
+.paragraph_02.testimonial {
+  font-size: 12px;
+}
+
+.paragraph_02.acc {
+  padding-top: 22.5px;
+}
+
+.paragraph_02.space_testimonial {
+  color: var(--white);
+  margin-top: -32px;
+  margin-left: 32px;
+  font-style: italic;
+  display: block;
+}
+
+.paragraph_02.space_testimonial.r {
+  text-align: right;
+  margin-top: 0;
+}
+
+.paragraph_02.space_value_quote_name {
+  font-weight: 500;
+}
+
+.offer_icon {
+  width: 62px;
+  height: 62px;
+  display: block;
+}
+
+.gradient_section {
+  background-color: #7babb9;
+  background-image: linear-gradient(135deg, rgba(87, 97, 178, .25), rgba(34, 198, 169, .25)), linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2));
+  margin-top: 0;
+  padding: 96px 5%;
+  display: block;
+}
+
+.in_01 {
+  color: #fdfefe;
+  text-align: center;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 36px;
+}
+
+.indicators {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  flex-direction: column;
+  display: flex;
+}
+
+.in_image_1-4 {
+  height: 32px;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.indicator {
+  width: 33%;
+  border-radius: 2px;
+  display: inline-block;
+}
+
+.col_1-3 {
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: stretch;
+  align-items: stretch;
+  display: flex;
+}
+
+.heading_02 {
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+.col_ii {
+  width: 100%;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-direction: row;
+  display: flex;
+}
+
+.col_ii._1-4 {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+}
+
+.col_ii._1-1 {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  flex-direction: column;
+}
+
+.col_ii._1-1._50 {
+  width: 44%;
+  grid-row-gap: 16px;
+}
+
+.col_ii.renewables_solutions {
+  align-items: center;
+}
+
+.col_ii.buttons {
+  grid-row-gap: 8px;
+  flex-direction: column;
+}
+
+.offer_list {
+  width: 50%;
+  grid-column-gap: 32px;
+  grid-row-gap: 16px;
+  flex-direction: column;
+  display: flex;
+}
+
+.offer_list.renewables {
+  width: 100%;
+  grid-row-gap: 24px;
+}
+
+.offer_list.renewables_solutions {
+  width: 100%;
+}
+
+.team_photo {
+  width: 50%;
+  background-image: url('../images/IE_01.png');
+  background-position: 70% 0;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.team_photo.neutral {
+  width: 54%;
+  background-image: url('../images/Team_Neutral.webp');
+  background-position: 50% 0;
+}
+
+.button_1-4 {
+  height: 32px;
+  color: var(--white);
+  text-align: center;
+  background-color: #5f67aa;
+  border-radius: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 32px;
+  transition: background-color .2s;
+  display: block;
+  position: static;
+}
+
+.button_1-4:hover {
+  background-color: #515891;
+}
+
+.button_1-4.renewables.main_page {
+  color: #5f67aa;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #5f67aa;
+}
+
+.button_1-4.renewables.main_page:hover {
+  color: #515891;
+  background-color: rgba(81, 88, 145, .1);
+  border-color: #515891;
+}
+
+.button_1-4.space_quote {
+  height: 48px;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32px;
+  line-height: 48px;
+  text-decoration: none;
+  display: none;
+}
+
+.client_logo {
+  height: auto;
+  max-height: 32px;
+}
+
+.client_logo.sm {
+  max-height: 40px;
+}
+
+.c_icon {
+  height: 14px;
+}
+
+.testimonial {
+  justify-content: center;
+  display: flex;
+}
+
+.clients {
+  grid-column-gap: 5vw;
+  opacity: .5;
+  grid-template: "Area Area-2 Area-3 Area-4 Area-5 Area-6 Area-7"
+  / 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact_icon {
+  width: 14px;
+  margin-right: 8px;
+}
+
+.heading_02-2 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.contact {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+}
+
+.f_text_02 {
+  color: #b6bbbd;
+  text-align: left;
+  font-size: 8px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.f_link_02 {
+  color: #b6bbbd;
+  justify-content: flex-start;
+  font-family: Open Sans, sans-serif;
+  font-size: 8px;
+  font-weight: 600;
+  line-height: 14px;
+  text-decoration: none;
+}
+
+.f_link_02:hover {
+  color: var(--text_02);
+}
+
+.contact_phone_mail, .ofer_text {
+  grid-row-gap: 4px;
+  flex-direction: column;
+  display: flex;
+}
+
+.contact_text {
+  width: 33%;
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  flex-direction: column;
+  margin: 32px auto;
+  display: flex;
+}
+
+.utility-page-wrap {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100%;
+  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.utility-page-content {
+  width: 260px;
+  text-align: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.list_p2_content {
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+}
+
+.list_p1_div {
+  grid-row-gap: 8px;
+  flex-direction: column;
+  display: flex;
+}
+
+.about_val_h {
+  grid-row-gap: 4px;
+  flex-direction: column;
+  align-items: flex-start;
+  display: flex;
+}
+
+.plus_02 {
+  width: 16px;
+  height: 2px;
+  background-color: #5f67aa;
+  margin-top: -9px;
+  display: flex;
+}
+
+.acc_h_ic {
+  width: 16px;
+  height: 16px;
+  margin-left: 32px;
+}
+
+.plus_01 {
+  width: 2px;
+  height: 16px;
+  background-color: #5f67aa;
+  margin-left: 7px;
+}
+
+.acc_sep {
+  height: 1px;
+  background-color: #b6bbbd;
+}
+
+.acc_sep.rev {
+  margin-top: 22.5px;
+  margin-bottom: 0;
+}
+
+.about_val_icon_1-4 {
+  width: 48px;
+  height: 48px;
+  margin-right: 16px;
+}
+
+.acc_h_t {
+  align-items: center;
+  display: flex;
+}
+
+.acc_c {
+  padding-top: 0;
+  padding-left: 22.5px;
+  padding-right: 22.5px;
+  overflow: hidden;
+}
+
+.acc_h {
+  cursor: pointer;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 22.5px;
+  padding-left: 22.5px;
+  padding-right: 22.5px;
+  display: flex;
+}
+
+.acc_div {
+  display: block;
+}
+
+.acc_div.val {
+  display: none;
+}
+
+.renewables_photo {
+  width: 30%;
+  min-width: 30%;
+  background-image: url('../images/Renewables_Photo-p-1080.webp');
+  background-position: 5% 100%;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.div_top_1-2 {
+  margin-top: 32px;
+}
+
+.list_p2_div {
+  grid-row-gap: 7px;
+  flex-direction: column;
+  display: flex;
+}
+
+.list_punkt_p2 {
+  width: 7px;
+  align-self: flex-start;
+  margin-top: 6px;
+  margin-right: 14px;
+  transform: rotate(315deg);
+}
+
+.renewables_offer {
+  grid-column-gap: 16px;
+  grid-row-gap: 32px;
+  align-items: flex-start;
+  margin: 0;
+  display: flex;
+}
+
+.renewables_offer.mobi {
+  display: none;
+}
+
+.space_value_text {
+  width: 50%;
+  flex-direction: column;
+  padding-left: 5vw;
+  display: flex;
+}
+
+.space_value_quote {
+  width: 50%;
+  background-color: var(--gray_bg);
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 64px 5vw 64px 64px;
+  display: flex;
+}
+
+.space_quotes_frame {
+  width: 33%;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  border: 1px none var(--white);
+  border-radius: 2px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px 0;
+  display: flex;
+}
+
+.space_frame {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  border: 1px solid var(--text_02);
+  border-radius: 2px;
+  flex-direction: column;
+  padding: 32px;
+  display: flex;
+}
+
+.space_frame.space_services {
+  width: 33%;
+  border-style: none;
+  align-items: center;
+}
+
+.space_icon {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+}
+
+.bold-text {
+  color: var(--text_01);
+  text-transform: uppercase;
+}
+
+.space_why_con {
+  grid-column-gap: 64px;
+  grid-row-gap: 64px;
+  flex-direction: column;
+  display: flex;
+}
+
+.space_value_quote_photo {
+  height: 64px;
+}
+
+.space_value_quote_author {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 0;
+  margin-left: 32px;
+  display: flex;
+}
+
+.space_value {
+  grid-column-gap: 64px;
+  grid-row-gap: 64px;
+  align-items: stretch;
+  display: flex;
+}
+
+.div-block-9 {
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.space_value_quote_icon {
+  height: 96px;
+}
+
+.offer_punkt {
+  height: 20px;
+  margin-bottom: auto;
+}
+
+.div-block-14 {
+  width: 64px;
+  height: 96px;
+  border-top: 2px dashed var(--violet);
+  border-bottom: 2px dashed var(--violet);
+  border-left: 2px dashed var(--violet);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  margin-top: 32px;
+}
+
+.div-block-14.r {
+  height: 194px;
+  border-right: 2px dashed var(--violet);
+  border-left-style: none;
+  border-radius: 0 16px 16px 0;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 126px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.div-block-14._2nd {
+  height: 98px;
+  margin-bottom: 32px;
+}
+
+.div-block-15 {
+  align-items: flex-start;
+  display: flex;
+}
+
+.image-4 {
+  height: 64px;
+  margin-bottom: -33px;
+  margin-left: auto;
+  margin-right: 64px;
+  transform: rotate(90deg);
+}
+
+.image-4.r {
+  height: 48px;
+  margin-bottom: -25px;
+  margin-left: 192px;
+  margin-right: auto;
+  transform: none;
+}
+
+.image-4.mob {
+  display: none;
+}
+
+.image-5 {
+  height: 12px;
+}
+
+.space_offer {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  display: flex;
+}
+
+.space_offer_photo {
+  width: 50%;
+  background-image: url('../images/Team_Neutral.webp');
+  background-position: 50% 100%;
+  background-size: cover;
+  border-radius: 2px;
+}
+
+.space_offer_text {
+  width: 50%;
+  flex-direction: column;
+  padding-right: 5vw;
+  display: flex;
+}
+
+.space_offer_punkt {
+  grid-column-gap: 16px;
+  grid-row-gap: 32px;
+  align-items: flex-start;
+  margin: 0;
+  display: flex;
+}
+
+.space_offer_service {
+  grid-row-gap: 4px;
+  flex-direction: column;
+  display: flex;
+}
+
+.space_solutions {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  display: flex;
+}
+
+.space_quotes_icon {
+  height: 64px;
+  opacity: .2;
+  margin-right: auto;
+}
+
+.div-block-16 {
+  height: 128px;
+  border-bottom: 2px dashed var(--violet);
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.div-block-16.last {
+  height: auto;
+  border-bottom-style: none;
+}
+
+.div-block-17 {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  align-items: center;
+  display: flex;
+}
+
+.div-block-18 {
+  flex-direction: column;
+  justify-content: space-between;
+  display: flex;
+}
+
+.text-block {
+  font-weight: 700;
+}
+
+.space_blue_box {
+  height: auto;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  background-color: var(--blue_bg);
+  border-radius: 2px;
+  align-items: center;
+  margin: 0;
+  padding: 24px;
+  display: flex;
+}
+
+.space_blue_box.offer {
+  grid-column-gap: 1.7vw;
+  grid-row-gap: 0px;
+  padding: 1.7vw;
+}
+
+.space_blue_box.renewables_solutions {
+  width: 50%;
+}
+
+.space_blue_box.renewables_solutions.mobi {
+  display: none;
+}
+
+.space_blue_box.pad_l_0 {
+  padding-left: 0;
+}
+
+.space_blue_box.services {
+  width: 33%;
+  flex-direction: column;
+}
+
+.div-block-19, .div-block-19._2nd {
+  display: none;
+}
+
+.space_services {
+  grid-column-gap: 32px;
+  grid-row-gap: 32px;
+  display: flex;
+}
+
+.div-block-21 {
+  display: none;
+}
+
+.div_top_1-4 {
+  margin-top: 32px;
+}
+
+.div_top_1-4.space_value_tiles {
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  flex-direction: column;
+  display: flex;
+}
+
+.div-block-22 {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .graph_section {
+    padding-left: 7.5vw;
+    padding-right: 7.5vw;
+  }
+
+  .blue_box.offer {
+    grid-column-gap: 24px;
+    padding: 24px;
+  }
+
+  .kg_contact_section {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+
+  .graph_text_01 {
+    letter-spacing: 6px;
+    font-size: 48px;
+  }
+
+  .graph_text_02, .graph_text_02.renewables_desktop, .graph_text_02.renewables_mobi {
+    letter-spacing: 12px;
+    font-size: 96px;
+  }
+
+  .navbar_background, .navbar, .section {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+
+  .section.grey {
+    padding-right: 7.5%;
+  }
+
+  .section.grey.space_offer, .gradient_section {
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+  }
+
+  .team_photo {
+    background-position: 100% 0;
+  }
+
+  .clients {
+    grid-column-gap: 4vw;
+  }
+
+  .f_text_02, .f_link_02 {
+    font-size: 10px;
+  }
+
+  .space_value_text {
+    padding-left: 7.5vw;
+  }
+
+  .space_value_quote {
+    padding-right: 7.5vw;
+  }
+
+  .space_offer_photo {
+    background-position: 100% 0;
+  }
+
+  .space_offer_text {
+    padding-right: 0;
+  }
+
+  .space_blue_box.offer {
+    grid-column-gap: 24px;
+    padding: 24px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .graph_section {
+    padding-left: 10vw;
+    padding-right: 10vw;
+  }
+
+  .reasons_tiles {
+    grid-column-gap: 19px;
+    grid-row-gap: 19px;
+  }
+
+  .blue_box {
+    grid-column-gap: 28.5px;
+    grid-row-gap: 28.5px;
+    padding: 28.5px;
+  }
+
+  .blue_box.offer {
+    grid-column-gap: 28.5px;
+    padding: 28.5px;
+  }
+
+  .reason_image {
+    height: 76px;
+  }
+
+  .reason_text {
+    grid-row-gap: 19px;
+  }
+
+  .indicators_separator {
+    height: 114px;
+  }
+
+  .testimonial_icon {
+    height: 76px;
+  }
+
+  .arrow_r {
+    height: 28.5px;
+  }
+
+  .testimonial_text {
+    padding: 38px 76px 76px 38px;
+  }
+
+  .arrow_l {
+    height: 28.5px;
+  }
+
+  .testimonial_photo {
+    height: 76px;
+    margin-bottom: 19px;
+  }
+
+  .testimonial_box {
+    margin: 38px;
+    padding: 38px;
+  }
+
+  .right-arrow, .left-arrow {
+    width: 28.5px;
+  }
+
+  .contact_graph.kg {
+    margin-top: -38px;
+    margin-bottom: -57px;
+  }
+
+  .kg_contact_section {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .footer_section {
+    height: 57px;
+    grid-column-gap: 8px;
+  }
+
+  .graph_text_01 {
+    letter-spacing: 7.125px;
+    margin-bottom: 38px;
+    padding-top: 200px;
+    font-size: 57px;
+  }
+
+  .graph_text_02 {
+    letter-spacing: 14.25px;
+    font-size: 114px;
+  }
+
+  .graph_text_02.renewables_desktop, .graph_text_02.renewables_mobi {
+    letter-spacing: 12.75px;
+    font-size: 102px;
+  }
+
+  .navbar_background {
+    height: 80px;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .navbar {
+    height: 80px;
+    padding: 20px 10%;
+  }
+
+  .button_menu {
+    height: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 14px;
+    line-height: 40px;
+  }
+
+  .navbar_shadow {
+    height: 80px;
+  }
+
+  .logo_dark {
+    width: 181.188px;
+    height: 32px;
+  }
+
+  .heading_03 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .sep_1-3_1-6 {
+    width: 50.6667px;
+    margin-top: 25.3333px;
+    margin-bottom: 25.3333px;
+  }
+
+  .heading_01 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .div_top_1-3 {
+    margin-top: 50.6667px;
+  }
+
+  .div_top_1-3.space_why {
+    max-width: 1024px;
+  }
+
+  .div_top_1-3.space_quotes {
+    grid-column-gap: 114px;
+    grid-row-gap: 114px;
+  }
+
+  .section {
+    grid-column-gap: 152px;
+    grid-row-gap: 152px;
+    padding: 152px 10%;
+  }
+
+  .section.grey {
+    padding-right: 10%;
+  }
+
+  .section.grey.space_offer {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  .paragraph_01 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .paragraph_01.reasons {
+    height: 50px;
+  }
+
+  .paragraph_01.testimonial {
+    margin-top: -38px;
+    margin-left: 38px;
+  }
+
+  .paragraph_01.quote_pg {
+    margin-top: -76px;
+    margin-left: 38px;
+    font-size: 20px;
+  }
+
+  .paragraph_01.space_services.dark {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .paragraph_02 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .paragraph_02.testimonial {
+    font-size: 14px;
+  }
+
+  .paragraph_02.acc {
+    padding-top: 25.25px;
+  }
+
+  .offer_icon {
+    width: 70.5px;
+    height: 70.5px;
+  }
+
+  .gradient_section {
+    padding: 114px 10%;
+  }
+
+  .in_01 {
+    margin-top: 19px;
+    margin-bottom: 19px;
+    font-size: 33.75px;
+    line-height: 41px;
+  }
+
+  .indicators {
+    grid-column-gap: 38px;
+    grid-row-gap: 38px;
+  }
+
+  .in_image_1-4 {
+    height: 38px;
+  }
+
+  .heading_02 {
+    font-size: 22.5px;
+    line-height: 27px;
+  }
+
+  .col_ii {
+    grid-column-gap: 19px;
+    grid-row-gap: 19px;
+  }
+
+  .col_ii._1-4, .col_ii._1-1 {
+    grid-column-gap: 38px;
+    grid-row-gap: 38px;
+  }
+
+  .col_ii._1-1._50 {
+    width: 45%;
+    grid-column-gap: 38px;
+    grid-row-gap: 38px;
+  }
+
+  .col_ii.buttons {
+    grid-row-gap: 9.5px;
+  }
+
+  .offer_list {
+    grid-row-gap: 19px;
+  }
+
+  .offer_list.renewables {
+    grid-row-gap: 28.5px;
+  }
+
+  .team_photo {
+    background-position: 80% 0;
+  }
+
+  .team_photo.neutral {
+    width: 53%;
+  }
+
+  .button_1-4 {
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+  }
+
+  .button_1-4.space_quote {
+    height: 57px;
+    grid-column-gap: 19px;
+    grid-row-gap: 19px;
+    margin-left: 38px;
+  }
+
+  .client_logo {
+    max-height: 38px;
+  }
+
+  .client_logo.sm {
+    max-height: 47.5px;
+  }
+
+  .c_icon {
+    height: 16px;
+  }
+
+  .contact_icon {
+    width: 16px;
+    margin-right: 9px;
+  }
+
+  .heading_02-2 {
+    font-size: 22.5px;
+    line-height: 27px;
+  }
+
+  .f_text_02, .f_link_02 {
+    font-size: 10px;
+    line-height: 16px;
+  }
+
+  .contact_phone_mail {
+    grid-row-gap: 4.75px;
+  }
+
+  .ofer_text {
+    grid-row-gap: 4.5px;
+  }
+
+  .contact_text {
+    margin-top: 38px;
+    margin-bottom: 38px;
+  }
+
+  .list_p1_div {
+    grid-row-gap: 9px;
+  }
+
+  .acc_sep.rev {
+    margin-top: 25.25px;
+  }
+
+  .about_val_icon_1-4 {
+    width: 38px;
+    height: 38px;
+    margin-right: 19px;
+  }
+
+  .acc_c {
+    padding-left: 25.25px;
+    padding-right: 25.25px;
+  }
+
+  .acc_h {
+    padding-top: 25.25px;
+    padding-left: 25.25px;
+    padding-right: 25.25px;
+  }
+
+  .acc_div {
+    margin-top: 54px;
+  }
+
+  .div_top_1-2 {
+    margin-top: 38px;
+  }
+
+  .list_p2_div {
+    grid-row-gap: 8px;
+  }
+
+  .list_punkt_p2 {
+    width: 8px;
+    margin-top: 7px;
+    margin-right: 16px;
+  }
+
+  .renewables_offer {
+    grid-column-gap: 19px;
+    grid-row-gap: 38px;
+  }
+
+  .space_value_text {
+    padding-left: 10vw;
+  }
+
+  .space_value_quote {
+    padding: 76px 10vw 76px 76px;
+  }
+
+  .space_quotes_frame {
+    grid-column-gap: 19px;
+    grid-row-gap: 19px;
+    padding-top: 38px;
+    padding-bottom: 38px;
+  }
+
+  .space_frame {
+    padding: 38px;
+  }
+
+  .space_frame.space_services {
+    grid-column-gap: 38px;
+    grid-row-gap: 38px;
+  }
+
+  .space_icon {
+    width: 76px;
+    height: 76px;
+  }
+
+  .space_why_con {
+    grid-column-gap: 76px;
+    grid-row-gap: 76px;
+  }
+
+  .space_value_quote_photo {
+    height: 76px;
+  }
+
+  .space_value_quote_author {
+    grid-column-gap: 19px;
+    grid-row-gap: 19px;
+    margin-top: 0;
+    margin-left: 38px;
+  }
+
+  .space_value {
+    grid-column-gap: 76px;
+    grid-row-gap: 76px;
+  }
+
+  .space_value_quote_icon {
+    height: 114px;
+  }
+
+  .offer_punkt {
+    height: 22px;
+  }
+
+  .div-block-14 {
+    width: 76px;
+    height: 118px;
+    border-top-left-radius: 19px;
+    border-bottom-left-radius: 19px;
+    margin-top: 38px;
+  }
+
+  .div-block-14.r {
+    height: 234px;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    margin-top: 154px;
+  }
+
+  .div-block-14._2nd {
+    height: 116px;
+    margin-bottom: 38px;
+  }
+
+  .image-4 {
+    height: 76px;
+    margin-bottom: -39px;
+    margin-right: 76px;
+  }
+
+  .image-4.r {
+    height: 57px;
+    margin-bottom: -30px;
+    margin-left: 228px;
+  }
+
+  .image-5 {
+    height: 14px;
+  }
+
+  .space_offer {
+    grid-column-gap: 38px;
+    grid-row-gap: 38px;
+  }
+
+  .space_offer_photo {
+    background-position: 80% 0;
+  }
+
+  .space_offer_punkt {
+    grid-column-gap: 19px;
+    grid-row-gap: 38px;
+  }
+
+  .space_offer_service {
+    grid-row-gap: 4.5px;
+  }
+
+  .space_quotes_icon {
+    height: 38px;
+    margin-bottom: 19px;
+  }
+
+  .div-block-16 {
+    height: 156px;
+  }
+
+  .div-block-17 {
+    grid-column-gap: 19px;
+    grid-row-gap: 19px;
+  }
+
+  .space_blue_box {
+    grid-column-gap: 28.5px;
+    grid-row-gap: 28.5px;
+    padding: 28.5px;
+  }
+
+  .space_blue_box.offer {
+    grid-column-gap: 28.5px;
+    padding: 28.5px;
+  }
+
+  .div_top_1-4 {
+    margin-top: 38px;
+  }
+
+  .div_top_1-4.space_value_tiles {
+    grid-column-gap: 19px;
+    grid-row-gap: 19px;
+    margin-top: 38px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .graph_section {
+    padding-left: 12.5vw;
+    padding-right: 12.5vw;
+  }
+
+  .reasons_tiles {
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+  }
+
+  .blue_box {
+    grid-column-gap: 33px;
+    grid-row-gap: 33px;
+    padding: 33px;
+  }
+
+  .blue_box.offer {
+    grid-column-gap: 33px;
+    padding: 33px;
+  }
+
+  .reason_image {
+    height: 88px;
+  }
+
+  .reason_text {
+    grid-row-gap: 22px;
+  }
+
+  .indicators_separator {
+    height: 132px;
+  }
+
+  .testimonial_icon {
+    height: 88px;
+  }
+
+  .arrow_r {
+    height: 33px;
+  }
+
+  .testimonial_text {
+    padding: 44px 88px 88px 44px;
+  }
+
+  .arrow_l {
+    height: 33px;
+  }
+
+  .testimonial_photo {
+    height: 88px;
+    margin-bottom: 22px;
+  }
+
+  .testimonial_box {
+    margin: 44px;
+    padding: 44px;
+  }
+
+  .right-arrow {
+    width: 33px;
+  }
+
+  .left-arrow {
+    width: 33px;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+    right: auto;
+  }
+
+  .contact_graph.kg {
+    margin-top: -44px;
+    margin-bottom: -66px;
+  }
+
+  .kg_contact_section {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+
+  .footer_section {
+    height: 66px;
+    grid-column-gap: 9px;
+  }
+
+  .graph_text_01 {
+    letter-spacing: 8.25px;
+    margin-bottom: 44px;
+    padding-top: 240px;
+    font-size: 66px;
+  }
+
+  .graph_text_02 {
+    letter-spacing: 16.5px;
+    font-size: 132px;
+  }
+
+  .graph_text_02.renewables_desktop, .graph_text_02.renewables_mobi {
+    letter-spacing: 15.875px;
+    font-size: 127px;
+  }
+
+  .navbar_background {
+    height: 96px;
+    justify-content: center;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+
+  .navbar {
+    height: 96px;
+    justify-content: center;
+    padding: 24px 12.5%;
+  }
+
+  .button_menu {
+    height: 48px;
+    padding-left: 48px;
+    padding-right: 48px;
+    font-size: 16px;
+    line-height: 48px;
+  }
+
+  .navbar_shadow {
+    height: 96px;
+  }
+
+  .brand.w--current {
+    margin-top: 6px;
+    margin-bottom: 6px;
+  }
+
+  .logo_dark {
+    width: 203.836px;
+    height: 36px;
+  }
+
+  .heading_03 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .sep_1-3_1-6 {
+    width: 58.6667px;
+    margin-top: 29.3333px;
+    margin-bottom: 29.3333px;
+  }
+
+  .sep_1-3_1-6.cen {
+    margin-top: 29.3333px;
+    margin-bottom: 29.3333px;
+  }
+
+  .heading_01 {
+    font-size: 40px;
+    line-height: 49px;
+  }
+
+  .div_top_1-3 {
+    margin-top: 58.6667px;
+  }
+
+  .div_top_1-3.space_why {
+    max-width: 1152px;
+  }
+
+  .div_top_1-3.space_quotes {
+    grid-column-gap: 132px;
+    grid-row-gap: 132px;
+  }
+
+  .section {
+    width: 100svw;
+    grid-column-gap: 176px;
+    grid-row-gap: 176px;
+    padding: 176px 12.5%;
+  }
+
+  .section.grey {
+    padding-right: 12.5%;
+  }
+
+  .section.grey.space_offer {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+
+  .section.pad_lr_0 {
+    justify-content: center;
+  }
+
+  .paragraph_01 {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .paragraph_01.reasons {
+    height: 54px;
+  }
+
+  .paragraph_01.testimonial {
+    margin-top: -44px;
+    margin-left: 44px;
+  }
+
+  .paragraph_01.quote_pg {
+    margin-top: -88px;
+    margin-left: 44px;
+    font-size: 24px;
+  }
+
+  .paragraph_01.space_services.dark {
+    font-size: 22px;
+    line-height: 29px;
+  }
+
+  .paragraph_02 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .paragraph_02.testimonial {
+    font-size: 16px;
+  }
+
+  .paragraph_02.acc {
+    padding-top: 28px;
+  }
+
+  .offer_icon {
+    width: 79px;
+    height: 79px;
+  }
+
+  .gradient_section {
+    padding: 132px 12.5%;
+  }
+
+  .in_01 {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    font-size: 37.5px;
+    line-height: 45px;
+  }
+
+  .indicators {
+    grid-column-gap: 44px;
+    grid-row-gap: 44px;
+  }
+
+  .in_image_1-4 {
+    height: 44px;
+  }
+
+  .heading_02 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .col_ii {
+    max-width: 1440px;
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .col_ii._1-4, .col_ii._1-1 {
+    grid-column-gap: 44px;
+    grid-row-gap: 44px;
+  }
+
+  .col_ii._1-1._50 {
+    width: 50%;
+    grid-column-gap: 44px;
+    grid-row-gap: 44px;
+  }
+
+  .col_ii.buttons {
+    grid-column-gap: 11px;
+    grid-row-gap: 11px;
+  }
+
+  .offer_list {
+    grid-row-gap: 22px;
+  }
+
+  .offer_list.renewables {
+    grid-row-gap: 33px;
+  }
+
+  .team_photo {
+    background-position: 100% 0;
+  }
+
+  .team_photo.neutral {
+    width: 50%;
+  }
+
+  .button_1-4 {
+    height: 44px;
+    font-size: 16px;
+    line-height: 44px;
+  }
+
+  .button_1-4.space_quote {
+    height: 66px;
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+    margin-left: 44px;
+  }
+
+  .client_logo {
+    max-height: 44px;
+  }
+
+  .client_logo.sm {
+    max-height: 55px;
+  }
+
+  .c_icon {
+    height: 18px;
+  }
+
+  .clients {
+    grid-template-areas: "Area Area-2 Area-3 Area-4 Area-5 Area-6 Area-7";
+  }
+
+  .contact_icon {
+    width: 18px;
+    margin-right: 10px;
+  }
+
+  .heading_02-2 {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .f_text_02, .f_link_02 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .contact_phone_mail {
+    grid-row-gap: 5.5px;
+  }
+
+  .ofer_text {
+    grid-row-gap: 5px;
+  }
+
+  .contact_text {
+    margin-top: 44px;
+    margin-bottom: 44px;
+  }
+
+  .list_p2_content {
+    justify-content: flex-start;
+  }
+
+  .list_p1_div {
+    grid-row-gap: 10px;
+  }
+
+  .acc_sep.rev {
+    margin-top: 28px;
+  }
+
+  .about_val_icon_1-4 {
+    width: 44px;
+    height: 44px;
+    margin-right: 22px;
+  }
+
+  .acc_c {
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .acc_h {
+    padding-top: 28px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  .acc_div {
+    margin-top: 66px;
+  }
+
+  .div_top_1-2 {
+    margin-top: 44px;
+  }
+
+  .list_p2_div {
+    grid-row-gap: 9px;
+  }
+
+  .list_punkt_p2 {
+    width: 9px;
+    margin-top: 8px;
+    margin-right: 18px;
+  }
+
+  .renewables_offer {
+    grid-column-gap: 22px;
+    grid-row-gap: 44px;
+  }
+
+  .space_value_text {
+    padding-left: 12.5vw;
+  }
+
+  .space_value_quote {
+    padding: 88px 12.5vw 88px 88px;
+  }
+
+  .space_quotes_frame {
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+    padding-top: 44px;
+    padding-bottom: 44px;
+  }
+
+  .space_frame {
+    padding: 44px;
+  }
+
+  .space_frame.space_services {
+    grid-column-gap: 44px;
+    grid-row-gap: 44px;
+  }
+
+  .space_icon {
+    width: 88px;
+    height: 88px;
+  }
+
+  .space_why_con {
+    grid-column-gap: 88px;
+    grid-row-gap: 88px;
+  }
+
+  .space_value_quote_photo {
+    height: 88px;
+  }
+
+  .space_value_quote_author {
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+    margin-top: 0;
+    margin-left: 44px;
+  }
+
+  .space_value {
+    grid-column-gap: 88px;
+    grid-row-gap: 88px;
+  }
+
+  .div-block-9 {
+    width: 588px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    margin-left: auto;
+    display: flex;
+  }
+
+  .space_value_quote_icon {
+    height: 132px;
+  }
+
+  .offer_punkt {
+    height: 24px;
+  }
+
+  .div-block-14 {
+    width: 88px;
+    height: 132px;
+    border-top-left-radius: 22px;
+    border-bottom-left-radius: 22px;
+    margin-top: 44px;
+  }
+
+  .div-block-14.r {
+    height: 266px;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    margin-top: 174px;
+  }
+
+  .div-block-14._2nd {
+    height: 134px;
+    margin-bottom: 44px;
+  }
+
+  .image-4 {
+    height: 88px;
+    margin-bottom: -45px;
+    margin-right: 88px;
+  }
+
+  .image-4.r {
+    height: 66px;
+    margin-bottom: -34px;
+    margin-left: 264px;
+  }
+
+  .image-5 {
+    height: 16px;
+  }
+
+  .space_offer {
+    grid-column-gap: 44px;
+    grid-row-gap: 44px;
+  }
+
+  .space_offer_photo {
+    background-position: 100% 0;
+  }
+
+  .space_offer_punkt {
+    grid-column-gap: 22px;
+    grid-row-gap: 44px;
+  }
+
+  .space_offer_service {
+    grid-row-gap: 5px;
+  }
+
+  .space_quotes_icon {
+    height: 44px;
+    margin-bottom: 22px;
+  }
+
+  .div-block-16 {
+    height: 176px;
+  }
+
+  .div-block-17 {
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+  }
+
+  .space_blue_box {
+    grid-column-gap: 33px;
+    grid-row-gap: 33px;
+    padding: 33px;
+  }
+
+  .space_blue_box.offer {
+    grid-column-gap: 33px;
+    padding: 33px;
+  }
+
+  .div_top_1-4 {
+    margin-top: 44px;
+  }
+
+  .div_top_1-4.space_value_tiles {
+    grid-column-gap: 22px;
+    grid-row-gap: 22px;
+    margin-top: 44px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .graph_section {
+    -webkit-text-fill-color: inherit;
+    background-clip: padding-box;
+  }
+
+  .reasons_tiles {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+
+  .blue_box {
+    height: 100%;
+  }
+
+  .blue_box.offer {
+    grid-column-gap: 24px;
+    padding: 24px;
+  }
+
+  .blue_box.renewables_solutions {
+    width: 100%;
+    align-items: center;
+  }
+
+  .reason_image {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .testimonial_text {
+    border-top-left-radius: 0;
+    border-top-right-radius: 16px;
+  }
+
+  .testimonial_photo {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+
+  .testimonial_box {
+    grid-row-gap: 16px;
+    flex-direction: column-reverse;
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .right-arrow, .left-arrow {
+    width: 25px;
+  }
+
+  .contact_graph {
+    width: 30%;
+  }
+
+  .contact_graph.kg.renewables {
+    width: 30%;
+    margin-top: 32px;
+  }
+
+  .graph_text_01 {
+    letter-spacing: 5.25px;
+    font-size: 42px;
+  }
+
+  .graph_text_02 {
+    letter-spacing: 10.5px;
+    font-size: 84px;
+  }
+
+  .graph_text_02.renewables_desktop {
+    display: none;
+  }
+
+  .graph_text_02.renewables_mobi {
+    letter-spacing: 10.5px;
+    font-size: 84px;
+    display: block;
+  }
+
+  .menu-button {
+    padding-top: 22px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: auto;
+    right: 0%;
+  }
+
+  .menu-button.w--open {
+    background-color: #3b93ad;
+  }
+
+  .button_menu:hover {
+    background-color: #5f67aa;
+  }
+
+  .button_menu:active {
+    background-color: #515891;
+  }
+
+  .heading_03 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .sep_1-3_1-6.space_value {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .heading_01.space_value {
+    text-align: center;
+  }
+
+  .div_top_1-3.space_why {
+    max-width: 736px;
+  }
+
+  .div_top_1-3.space_quotes {
+    grid-column-gap: 48px;
+    grid-row-gap: 48px;
+  }
+
+  .section.grey {
+    padding-bottom: 0;
+    padding-right: 5%;
+  }
+
+  .section.grey.space_offer {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .div_general.renewable_desktop {
+    display: none;
+  }
+
+  .div_general.renewable_mobi {
+    display: block;
+  }
+
+  .paragraph_01 {
+    font-size: 18px;
+    line-height: 25px;
+  }
+
+  .paragraph_01.reasons {
+    height: auto;
+  }
+
+  .paragraph_01.quote_pg {
+    font-size: 20px;
+  }
+
+  .paragraph_01.space_value {
+    text-align: center;
+  }
+
+  .paragraph_02 {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .paragraph_02.con {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .paragraph_02.testimonial {
+    font-size: 14px;
+  }
+
+  .paragraph_02.space_testimonial {
+    margin-top: -48px;
+    margin-left: 16px;
+  }
+
+  .offer_icon {
+    width: 70.5px;
+    height: 70.5px;
+  }
+
+  .indicators {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+  }
+
+  .heading_02 {
+    font-size: 22.5px;
+    line-height: 27px;
+  }
+
+  .col_ii {
+    grid-row-gap: 32px;
+    flex-direction: column;
+  }
+
+  .col_ii._1-4 {
+    flex-direction: column;
+  }
+
+  .col_ii._1-1._50 {
+    width: 100%;
+    grid-row-gap: 48px;
+  }
+
+  .col_ii.renewables_solutions {
+    grid-row-gap: 16px;
+    justify-content: center;
+  }
+
+  .offer_list {
+    width: auto;
+    grid-row-gap: 16px;
+  }
+
+  .offer_list.renewables {
+    grid-row-gap: 32px;
+  }
+
+  .team_photo {
+    width: auto;
+    height: 60vw;
+    min-width: auto;
+    background-position: 100% 0;
+  }
+
+  .team_photo.neutral {
+    width: 100vw;
+    height: 60vw;
+    background-position: 50% 75%;
+    margin-top: 16px;
+    margin-left: -5vw;
+  }
+
+  .button_1-4 {
+    height: 38px;
+    font-size: 14px;
+    line-height: 38px;
+  }
+
+  .button_1-4:hover {
+    background-color: #5f67aa;
+  }
+
+  .button_1-4:active {
+    background-color: #464e8e;
+  }
+
+  .button_1-4.renewables:active {
+    background-color: #515891;
+  }
+
+  .button_1-4.renewables.main_page:hover {
+    color: #5f67aa;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: #5f67aa;
+  }
+
+  .button_1-4.renewables.main_page:active {
+    background-color: rgba(81, 88, 145, .1);
+  }
+
+  .clients {
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .heading_02-2 {
+    font-size: 22.5px;
+    line-height: 27px;
+  }
+
+  .contact {
+    display: flex;
+  }
+
+  .f_text_02, .f_link_02 {
+    font-size: 10px;
+  }
+
+  .f_link_02:hover {
+    color: #9ea5a7;
+  }
+
+  .f_link_02:active {
+    color: #e1e3e4;
+  }
+
+  .ofer_text {
+    grid-row-gap: 4.5px;
+  }
+
+  .testimonial_author {
+    grid-column-gap: 16px;
+    align-items: center;
+    display: flex;
+  }
+
+  .contact_text {
+    width: 40%;
+  }
+
+  .list_p1_div {
+    grid-row-gap: 9px;
+  }
+
+  .acc_div {
+    display: block;
+  }
+
+  .renewables_photo {
+    width: 100%;
+    height: 25vw;
+    min-width: 100%;
+    background-position: 50% 25%;
+  }
+
+  .list_p2_div {
+    grid-row-gap: 8px;
+  }
+
+  .list_punkt_p2 {
+    width: 8px;
+    margin-top: 7px;
+    margin-right: 16px;
+  }
+
+  .renewables_offer {
+    height: 100%;
+    align-items: flex-start;
+  }
+
+  .space_value_text {
+    width: 100%;
+    padding-right: 5vw;
+  }
+
+  .space_value_quote {
+    width: 100%;
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    padding-left: 5vw;
+  }
+
+  .space_frame.space_services {
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .space_value {
+    flex-direction: column;
+  }
+
+  .offer_punkt {
+    height: 22px;
+  }
+
+  .div-block-14 {
+    width: 24px;
+    height: 101px;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    margin-top: 38px;
+  }
+
+  .div-block-14.r {
+    height: 205px;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-top: 137px;
+  }
+
+  .div-block-14._2nd {
+    height: 101px;
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+
+  .image-4 {
+    margin-right: 128px;
+  }
+
+  .image-4.r {
+    margin-left: 160px;
+  }
+
+  .image-5 {
+    height: 14px;
+  }
+
+  .space_offer {
+    flex-direction: column-reverse;
+  }
+
+  .space_offer_photo {
+    width: auto;
+    height: 60vw;
+    min-width: auto;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    margin-left: -5vw;
+    margin-right: -5vw;
+  }
+
+  .space_offer_text {
+    width: auto;
+    padding-right: 0;
+  }
+
+  .space_offer_service {
+    grid-row-gap: 4.5px;
+  }
+
+  .div-block-16 {
+    height: 139px;
+  }
+
+  .space_blue_box {
+    height: 100%;
+  }
+
+  .space_blue_box.offer {
+    grid-column-gap: 24px;
+    padding: 24px;
+  }
+
+  .space_blue_box.renewables_solutions {
+    width: 100%;
+    align-items: center;
+  }
+
+  .space_blue_box.services {
+    height: auto;
+  }
+
+  .space_services {
+    grid-column-gap: 32px;
+    grid-row-gap: 32px;
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .graph_section {
+    height: auto;
+    padding-top: 128px;
+    padding-bottom: 64px;
+  }
+
+  .reasons_tiles {
+    flex-direction: column;
+    grid-template-rows: minmax(100px, 500fr) minmax(100px, 500fr) minmax(100px, 500fr);
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    margin-bottom: 0;
+    display: flex;
+  }
+
+  .blue_box {
+    width: 100%;
+  }
+
+  .blue_box.offer {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    padding: 24px;
+  }
+
+  .indicators_separator {
+    width: 1px;
+  }
+
+  .testimonial_icon {
+    height: 48px;
+  }
+
+  .arrow_r {
+    height: 15px;
+    right: 3px;
+  }
+
+  .testimonial_text {
+    padding: 24px 48px 48px 24px;
+  }
+
+  .testimonials_slider {
+    width: 100vw;
+    margin-left: -5vw;
+  }
+
+  .testimonials_mask {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .arrow_l {
+    height: 15px;
+    left: 3px;
+  }
+
+  .testimonial_box {
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 5vw;
+  }
+
+  .right-arrow, .left-arrow {
+    width: 16px;
+    display: none;
+  }
+
+  .contact_graph {
+    display: none;
+  }
+
+  .contact_graph.kg {
+    width: 160px;
+    margin-top: 32px;
+    margin-bottom: 0;
+    margin-right: 32px;
+    display: block;
+  }
+
+  .contact_graph.kg.renewables {
+    width: 176px;
+    height: 288px;
+    margin-right: 16px;
+  }
+
+  .kg_contact_section {
+    background-image: none;
+    background-position: 0 0;
+    background-repeat: repeat;
+    background-size: auto;
+  }
+
+  .footer_section {
+    margin-top: 0;
+  }
+
+  .graph_text_01 {
+    letter-spacing: 3.25px;
+    margin-bottom: 16px;
+    padding-top: 0;
+    font-size: 26px;
+  }
+
+  .graph_text_02, .graph_text_02.renewables_mobi {
+    letter-spacing: 6.5px;
+    font-size: 52px;
+  }
+
+  .menu-button {
+    height: 64px;
+    padding-top: 22px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .menu-button.w--open {
+    background-color: #3b93ad;
+  }
+
+  .navbar {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  .heading_03.testimonial, .heading_03.space_solutions {
+    text-align: left;
+  }
+
+  .div_top_1-3.space_why {
+    max-width: none;
+    justify-content: center;
+  }
+
+  .div_top_1-3.space_quotes {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    flex-direction: column;
+  }
+
+  .paragraph_01.testimonial {
+    margin-top: -24px;
+    margin-left: 24px;
+  }
+
+  .paragraph_02.con {
+    text-align: left;
+  }
+
+  .indicator {
+    width: 50%;
+  }
+
+  .client_logo {
+    max-height: none;
+  }
+
+  .heading_02-2.con {
+    text-align: left;
+  }
+
+  .contact {
+    justify-content: flex-start;
+  }
+
+  .f_link_02 {
+    font-size: 10px;
+  }
+
+  .contact_text {
+    width: 80%;
+    margin-left: 0;
+  }
+
+  .contact_text.renewables {
+    width: 70%;
+  }
+
+  .renewables_offer {
+    width: 100%;
+    display: flex;
+  }
+
+  .space_quotes_frame {
+    width: auto;
+  }
+
+  .space_frame.space_services {
+    width: 100%;
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    flex-direction: row;
+  }
+
+  .space_icon {
+    min-width: 64px;
+  }
+
+  .space_why_con {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+
+  .div-block-14, .image-4 {
+    display: none;
+  }
+
+  .image-4.r.mob {
+    margin-top: -25px;
+    display: block;
+  }
+
+  .image-4.mob {
+    display: block;
+  }
+
+  .div-block-16 {
+    height: auto;
+    border-bottom-style: none;
+    flex-direction: row;
+    margin-left: -5vw;
+    margin-right: -5vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  .div-block-17 {
+    height: auto;
+    align-items: stretch;
+  }
+
+  .space_blue_box {
+    width: 100%;
+  }
+
+  .space_blue_box.offer {
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    padding: 24px;
+  }
+
+  .space_blue_box.services {
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .div-block-19 {
+    height: 64px;
+    min-height: 64px;
+    border-bottom: 2px dashed var(--violet);
+    border-left: 2px dashed var(--violet);
+    border-bottom-left-radius: 16px;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 64px;
+    margin-left: 32px;
+    margin-right: 16px;
+    display: flex;
+  }
+
+  .div-block-19._2nd {
+    border-top: 2px dashed var(--violet);
+    border-bottom-style: none;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 0;
+    justify-content: flex-start;
+    margin-top: 64px;
+    margin-bottom: 0;
+    display: block;
+  }
+
+  .space_services {
+    grid-column-gap: 16px;
+    grid-row-gap: 16px;
+    flex-direction: column;
+  }
+
+  .div-block-20 {
+    width: 64px;
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .div-block-21 {
+    height: 100%;
+    min-width: 32px;
+    border-left: 2px dashed var(--violet);
+    margin-left: 32px;
+    padding-bottom: 0;
+    padding-right: 0;
+    display: flex;
+  }
+
+  .div-block-22 {
+    width: 16px;
+    min-width: 16px;
+    border-top: 2px dashed var(--violet);
+    border-right: 2px dashed var(--violet);
+    border-bottom: 2px dashed var(--violet);
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    margin-top: -66px;
+    margin-bottom: -66px;
+    padding-bottom: 0;
+    padding-right: 0;
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .graph_section {
+    height: 100vh;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .graph_section.space {
+    background-position: 0 0, 45% 100%;
+  }
+
+  .reasons_tiles {
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .blue_box {
+    grid-column-gap: 24px;
+    align-items: flex-start;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+  }
+
+  .blue_box.offer {
+    grid-row-gap: 32px;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .blue_box.renewables_solutions {
+    display: none;
+  }
+
+  .blue_box.renewables_solutions.mobi {
+    grid-row-gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 24px;
+    display: flex;
+  }
+
+  .indicators_separator {
+    width: 96px;
+    height: 1px;
+    margin: 0 auto;
+  }
+
+  .testimonial_icon {
+    display: block;
+  }
+
+  .testimonial_text {
+    border-top-left-radius: 16px;
+    padding: 16px 32px 32px 16px;
+  }
+
+  .testimonials_slider {
+    height: auto;
+    padding-bottom: 0;
+  }
+
+  .testimonial_photo {
+    height: 48px;
+  }
+
+  .contact_graph.kg {
+    display: none;
+  }
+
+  .footer_section {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .graph_text_01 {
+    letter-spacing: .615385vw;
+    margin-bottom: 24px;
+    padding-top: 128px;
+    font-size: 8vw;
+    line-height: 110%;
+  }
+
+  .graph_text_02 {
+    letter-spacing: 1vw;
+    font-size: 13vw;
+    line-height: 110%;
+  }
+
+  .graph_text_02.renewables_mobi {
+    letter-spacing: 1vw;
+    font-size: 12.25vw;
+  }
+
+  .button_menu {
+    display: none;
+  }
+
+  .heading_03.offer.renewables {
+    text-align: left;
+  }
+
+  .heading_03.testimonial {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .heading_03.cen, .heading_03.space_solutions, .heading_03.space_value {
+    text-align: center;
+  }
+
+  .div_top_1-3.space_why {
+    display: none;
+  }
+
+  .div_top_1-3.space_why.mobi {
+    display: flex;
+  }
+
+  .section.grey {
+    padding-bottom: 0;
+  }
+
+  .paragraph_01.testimonial {
+    margin-top: -32px;
+    margin-left: 16px;
+  }
+
+  .paragraph_01.con_link {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .paragraph_01.quote_pg {
+    margin-left: 0;
+  }
+
+  .paragraph_01.space_why {
+    text-align: center;
+    margin-bottom: 64px;
+    padding-top: 24px;
+    padding-left: 0;
+    padding-right: 32px;
+  }
+
+  .paragraph_01.space_why._2nd {
+    padding-left: 32px;
+    padding-right: 0;
+  }
+
+  .paragraph_01.space_why._3rd {
+    margin-bottom: 0;
+    padding-left: 32px;
+  }
+
+  .paragraph_02.con {
+    text-align: right;
+  }
+
+  .paragraph_02.offer.renewables {
+    text-align: left;
+  }
+
+  .paragraph_02.testimonial {
+    text-align: center;
+  }
+
+  .paragraph_02.acc {
+    padding-top: 16px;
+  }
+
+  .paragraph_02.cen {
+    text-align: center;
+  }
+
+  .offer_icon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .indicator {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .col_1-3 {
+    grid-column-gap: 64px;
+    grid-row-gap: 64px;
+    flex-direction: column;
+  }
+
+  .team_photo.neutral {
+    margin-left: -5vw;
+  }
+
+  .button_1-4.space_quote {
+    height: auto;
+    margin-left: 0;
+    padding: 16px;
+  }
+
+  .client_logo {
+    max-height: 24px;
+  }
+
+  .client_logo.bel {
+    max-height: 16px;
+  }
+
+  .clients {
+    grid-row-gap: 7.5vw;
+    grid-template: "Area Area-2 Area-3" 1fr
+                   "Area-4 Area-5 Area-6" 1fr
+                   "Area-7 Area-7 Area-7" 1fr
+                   / 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    display: grid;
+  }
+
+  .contact_icon {
+    margin-right: 6px;
+  }
+
+  .heading_02-2.con {
+    text-align: right;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .contact {
+    justify-content: flex-start;
+  }
+
+  .contact_phone_mail {
+    align-items: flex-end;
+  }
+
+  .ofer_text.renewables {
+    grid-column-gap: 16px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .testimonial_author {
+    grid-row-gap: 8px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact_text {
+    width: 90vw;
+    background-image: url('../images/KG_BT_DB_male.png');
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 25.9vw;
+  }
+
+  .contact_text.renewables {
+    width: 100%;
+    background-size: 85px;
+    margin-right: 0;
+  }
+
+  .about_val_h {
+    grid-column-gap: 16px;
+    grid-row-gap: 24px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .acc_h_ic {
+    margin-left: 24px;
+  }
+
+  .acc_sep.rev {
+    margin-top: 16px;
+  }
+
+  .acc_c {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .acc_h {
+    padding-top: 16px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .renewables_photo {
+    height: 50vw;
+  }
+
+  .renewables_offer {
+    grid-column-gap: 24px;
+    align-items: flex-start;
+    display: none;
+  }
+
+  .renewables_offer.mobi {
+    grid-row-gap: 16px;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .space_frame.space_services {
+    flex-direction: column;
+  }
+
+  .space_icon {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+
+  .space_icon.why {
+    width: 64px;
+    height: 64px;
+    min-width: 64px;
+  }
+
+  .space_value_quote_author {
+    margin-left: 0;
+  }
+
+  .div-block-14 {
+    width: 16px;
+    margin-top: 32px;
+  }
+
+  .image-4.r.mob {
+    height: 36px;
+    margin-top: -19px;
+    margin-left: auto;
+  }
+
+  .image-4.mob {
+    height: 48px;
+    margin-bottom: -25px;
+    margin-right: auto;
+  }
+
+  .div-block-17 {
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .space_blue_box {
+    grid-column-gap: 24px;
+    flex-direction: column;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    padding-right: 24px;
+  }
+
+  .space_blue_box.offer {
+    grid-row-gap: 32px;
+    flex-direction: column;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .space_blue_box.renewables_solutions {
+    display: none;
+  }
+
+  .space_blue_box.renewables_solutions.mobi {
+    grid-row-gap: 16px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 24px;
+    display: flex;
+  }
+
+  .space_blue_box.services {
+    flex-direction: column;
+  }
+
+  .text-block-2 {
+    line-height: 125%;
+  }
+
+  .div-block-19 {
+    margin-left: 0;
+    display: none;
+  }
+
+  .div-block-19._2nd {
+    display: none;
+  }
+
+  .div-block-20 {
+    width: 100%;
+    flex-direction: row-reverse;
+  }
+
+  .div-block-21 {
+    width: 100%;
+    height: 32px;
+    border-style: dashed none none dashed;
+    border-width: 2px 1px 1px 2px;
+    border-color: var(--violet);
+    border-top-left-radius: 16px;
+    margin-top: 32px;
+    margin-left: 16px;
+  }
+
+  .div-block-21.blind {
+    border-style: none;
+    border-width: 1px;
+    margin-left: 16px;
+    margin-right: 0;
+  }
+
+  .div-block-21.vert {
+    width: 16px;
+    height: 100%;
+    min-width: 16px;
+    border-top-style: none;
+    border-left-style: dashed;
+    border-top-left-radius: 0;
+    margin-top: 0;
+    margin-left: 16px;
+  }
+
+  .div-block-21.vert._2nd {
+    border-style: none dashed none none;
+    border-right-width: 2px;
+    border-bottom-left-radius: 0;
+    align-items: flex-end;
+    margin-left: 0;
+    margin-right: 16px;
+    padding-bottom: 0;
+  }
+
+  .div-block-21._2nd {
+    border-top-style: none;
+    border-bottom-style: dashed;
+    border-bottom-width: 2px;
+    border-left-style: dashed;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 16px;
+    margin-top: 0;
+    padding-bottom: 32px;
+  }
+
+  .div-block-21._3rd {
+    border-left-style: none;
+    border-right-style: dashed;
+    border-right-width: 2px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 16px;
+    margin-top: 32px;
+    margin-left: 0;
+    margin-right: 16px;
+  }
+
+  .div-block-21._4th {
+    border-style: none dashed dashed none;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 16px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 16px;
+    padding-bottom: 32px;
+  }
+
+  .div-block-22 {
+    border-bottom-style: none;
+    border-bottom-right-radius: 0;
+    margin-bottom: 0;
+  }
+
+  .div-block-23 {
+    flex-direction: row;
+    display: flex;
+  }
+
+  .div-block-23._2nd {
+    flex-direction: row-reverse;
+  }
+
+  .image-6 {
+    width: 24px;
+    min-width: 24px;
+    margin-top: auto;
+    margin-bottom: 20px;
+    margin-left: -13px;
+    transform: rotate(180deg);
+  }
+
+  .image-6._2nd {
+    width: 32px;
+    min-width: 32px;
+    margin-left: 0;
+    margin-right: -16px;
+  }
+}
+
+#w-node-_74632a67-c5f9-d93a-ee30-5b0246e70a84-99380aa0 {
+  grid-area: Area-2;
+  justify-self: end;
+}
+
+#w-node-a9ff8c04-291a-913c-f513-ee91ef1da65d-99380aa0 {
+  grid-area: Area;
+}
+
+#w-node-a9ff8c04-291a-913c-f513-ee91ef1da665-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-a9ff8c04-291a-913c-f513-ee91ef1da66d-99380aa0 {
+  grid-area: Area-3;
+}
+
+#w-node-a9ff8c04-291a-913c-f513-ee91ef1da675-99380aa0 {
+  grid-area: Area-4;
+}
+
+#w-node-_2e10e158-841e-2abc-4391-4b440f49e886-99380aa0 {
+  grid-area: Area-3;
+  align-self: start;
+  justify-self: stretch;
+}
+
+#w-node-_249a6366-b7ab-80e4-2643-9e4a66cabd87-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-_2e10e158-841e-2abc-4391-4b440f49e88d-99380aa0 {
+  grid-area: Area-4;
+  align-self: start;
+  justify-self: stretch;
+}
+
+#w-node-_2e10e158-841e-2abc-4391-4b440f49e898-99380aa0 {
+  grid-area: Area-6;
+  align-self: start;
+  justify-self: stretch;
+}
+
+#w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92d9-99380aa0 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92da-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eea-99380aa0 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eeb-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc2-99380aa0 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc3-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b6-99380aa0 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b7-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314a4-99380aa0, #w-node-d85a686d-c27e-04ba-9c51-e88002f314b1-99380aa0 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314ab-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314be-99380aa0 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314b8-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314cb-99380aa0 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314c5-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314d8-99380aa0 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314d2-99380aa0 {
+  grid-area: Area-2;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0a-99380aa0 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0b-99380aa0 {
+  grid-area: Area-3;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0c-99380aa0 {
+  grid-area: Area-6;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0d-99380aa0 {
+  grid-area: Area-2;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0e-99380aa0 {
+  grid-area: Area-4;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0f-99380aa0 {
+  grid-area: Area-5;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e10-99380aa0 {
+  grid-area: Area-7;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_02a2bab0-a00c-be43-bca1-3d0f0176247c-99380aa0, #w-node-_02a2bab0-a00c-be43-bca1-3d0f01762481-99380aa0 {
+  grid-area: Area-3;
+}
+
+#w-node-_74632a67-c5f9-d93a-ee30-5b0246e70a84-c0e83821 {
+  grid-area: Area-2;
+  justify-self: end;
+}
+
+#w-node-_3e89399e-0e26-28b2-cbab-89267f095e20-c0e83821, #w-node-_3e89399e-0e26-28b2-cbab-89267f095e24-c0e83821, #w-node-_33820af5-b627-b178-956a-9553421c57f5-c0e83821, #w-node-_7b468dab-821b-c8e7-f486-fcbe062519d6-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_9b61c69a-2009-ece1-db78-42fe1fdd9589-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_9b61c69a-2009-ece1-db78-42fe1fdd958a-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_085443fd-c218-6846-96dc-0d029af3a462-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_085443fd-c218-6846-96dc-0d029af3a463-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_1b8d718c-8b83-5a5b-996b-5e67ad1b430a-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_1b8d718c-8b83-5a5b-996b-5e67ad1b430b-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_3feba9e3-4d5b-f4fd-6f2e-359a5ee9e186-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_3feba9e3-4d5b-f4fd-6f2e-359a5ee9e187-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c71-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c73-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c79-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c7b-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_9a41517a-6d78-1728-7542-d6fa83666c7e-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_9a41517a-6d78-1728-7542-d6fa83666c7f-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_9a41517a-6d78-1728-7542-d6fa83666c82-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_9a41517a-6d78-1728-7542-d6fa83666c83-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_9a41517a-6d78-1728-7542-d6fa83666c86-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_9a41517a-6d78-1728-7542-d6fa83666c87-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_9a41517a-6d78-1728-7542-d6fa83666c8b-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_9a41517a-6d78-1728-7542-d6fa83666c8c-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92d9-c0e83821 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92da-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_9721e481-ff33-d8e5-613f-67d69055b34f-c0e83821 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_9721e481-ff33-d8e5-613f-67d69055b351-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eea-c0e83821 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eeb-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_4776d5ad-b012-a5d1-7479-8858f67da1e1-c0e83821 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_4776d5ad-b012-a5d1-7479-8858f67da1e3-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc2-c0e83821 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc3-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_4a434f5e-ba0d-a392-c3ba-cee33b43b4d1-c0e83821 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_4a434f5e-ba0d-a392-c3ba-cee33b43b4d3-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b6-c0e83821 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b7-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_33f1f61e-58d3-af96-4d07-3ebc40210dc1-c0e83821 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_33f1f61e-58d3-af96-4d07-3ebc40210dc3-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-e6993650-c80d-3892-f051-9fbf199f1d4d-c0e83821 {
+  grid-area: Area;
+}
+
+#w-node-e6993650-c80d-3892-f051-9fbf199f1d55-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-e6993650-c80d-3892-f051-9fbf199f1d5c-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-e6993650-c80d-3892-f051-9fbf199f1d63-c0e83821 {
+  grid-area: Area-4;
+}
+
+#w-node-_2e10e158-841e-2abc-4391-4b440f49e886-c0e83821 {
+  grid-area: Area-3;
+  align-self: start;
+  justify-self: stretch;
+}
+
+#w-node-_249a6366-b7ab-80e4-2643-9e4a66cabd87-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_2e10e158-841e-2abc-4391-4b440f49e88d-c0e83821 {
+  grid-area: Area-4;
+  align-self: start;
+  justify-self: stretch;
+}
+
+#w-node-_2e10e158-841e-2abc-4391-4b440f49e898-c0e83821 {
+  grid-area: Area-6;
+  align-self: start;
+  justify-self: stretch;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314a4-c0e83821, #w-node-d85a686d-c27e-04ba-9c51-e88002f314b1-c0e83821 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314ab-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314be-c0e83821 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314b8-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314cb-c0e83821 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314c5-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314d8-c0e83821 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314d2-c0e83821 {
+  grid-area: Area-2;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0a-c0e83821 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0b-c0e83821 {
+  grid-area: Area-3;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0c-c0e83821 {
+  grid-area: Area-6;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0d-c0e83821 {
+  grid-area: Area-2;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0e-c0e83821 {
+  grid-area: Area-4;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0f-c0e83821 {
+  grid-area: Area-5;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e10-c0e83821 {
+  grid-area: Area-7;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_02a2bab0-a00c-be43-bca1-3d0f0176247c-c0e83821, #w-node-_02a2bab0-a00c-be43-bca1-3d0f01762481-c0e83821 {
+  grid-area: Area-3;
+}
+
+#w-node-_74632a67-c5f9-d93a-ee30-5b0246e70a84-dee88876 {
+  grid-area: Area-2;
+  justify-self: end;
+}
+
+#w-node-_6e77e837-3e37-4758-3849-699dfd843953-dee88876, #w-node-_4cbcddd8-a642-69fa-cdac-833455e24906-dee88876, #w-node-d59150a3-b59e-1bad-c744-ea6add724dc9-dee88876, #w-node-d0fe3368-33a1-0f7e-7cd5-d5721492a246-dee88876, #w-node-c6740618-d249-fe8e-d8b7-cf39546b60c7-dee88876, #w-node-d0fe3368-33a1-0f7e-7cd5-d5721492a265-dee88876, #w-node-_467a8169-dd71-8c1d-397c-6f5d17463b6a-dee88876, #w-node-c8e396e5-1681-2fec-17f3-751b7ca6688f-dee88876 {
+  grid-area: Area-3;
+}
+
+#w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92d9-dee88876 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92da-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eea-dee88876 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eeb-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc2-dee88876 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc3-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b6-dee88876 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b7-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-e6993650-c80d-3892-f051-9fbf199f1d4d-dee88876 {
+  grid-area: Area;
+}
+
+#w-node-e6993650-c80d-3892-f051-9fbf199f1d55-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-e6993650-c80d-3892-f051-9fbf199f1d5c-dee88876 {
+  grid-area: Area-3;
+}
+
+#w-node-e6993650-c80d-3892-f051-9fbf199f1d63-dee88876 {
+  grid-area: Area-4;
+}
+
+#w-node-_03d46192-86d2-51d6-cab5-4bade5e32a65-dee88876 {
+  grid-area: Area-3;
+  align-self: start;
+  justify-self: stretch;
+}
+
+#w-node-_03d46192-86d2-51d6-cab5-4bade5e32a6d-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-_03d46192-86d2-51d6-cab5-4bade5e32a6e-dee88876 {
+  grid-area: Area-4;
+  align-self: start;
+  justify-self: stretch;
+}
+
+#w-node-_03d46192-86d2-51d6-cab5-4bade5e32a77-dee88876 {
+  grid-area: Area-6;
+  align-self: start;
+  justify-self: stretch;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314a4-dee88876, #w-node-d85a686d-c27e-04ba-9c51-e88002f314b1-dee88876 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314ab-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314be-dee88876 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314b8-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314cb-dee88876 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314c5-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314d8-dee88876 {
+  grid-area: Area;
+}
+
+#w-node-d85a686d-c27e-04ba-9c51-e88002f314d2-dee88876 {
+  grid-area: Area-2;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0a-dee88876 {
+  grid-area: Area;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0b-dee88876 {
+  grid-area: Area-3;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0c-dee88876 {
+  grid-area: Area-6;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0d-dee88876 {
+  grid-area: Area-2;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0e-dee88876 {
+  grid-area: Area-4;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0f-dee88876 {
+  grid-area: Area-5;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e10-dee88876 {
+  grid-area: Area-7;
+  align-self: center;
+  justify-self: center;
+}
+
+#w-node-_02a2bab0-a00c-be43-bca1-3d0f0176247c-dee88876, #w-node-_02a2bab0-a00c-be43-bca1-3d0f01762481-dee88876 {
+  grid-area: Area-3;
+}
+
+@media screen and (min-width: 1920px) {
+  #w-node-a9ff8c04-291a-913c-f513-ee91ef1da65d-99380aa0 {
+    grid-area: Area;
+  }
+
+  #w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92d9-99380aa0 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92da-99380aa0 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eea-99380aa0 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eeb-99380aa0 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc2-99380aa0 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc3-99380aa0 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b6-99380aa0 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b7-99380aa0 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-d85a686d-c27e-04ba-9c51-e88002f314a4-99380aa0 {
+    grid-area: Area;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0b-99380aa0, #w-node-_02a2bab0-a00c-be43-bca1-3d0f0176247c-99380aa0, #w-node-_3e89399e-0e26-28b2-cbab-89267f095e20-c0e83821, #w-node-_3e89399e-0e26-28b2-cbab-89267f095e24-c0e83821, #w-node-_33820af5-b627-b178-956a-9553421c57f5-c0e83821, #w-node-_7b468dab-821b-c8e7-f486-fcbe062519d6-c0e83821, #w-node-_9b61c69a-2009-ece1-db78-42fe1fdd958a-c0e83821, #w-node-_085443fd-c218-6846-96dc-0d029af3a463-c0e83821, #w-node-_1b8d718c-8b83-5a5b-996b-5e67ad1b430b-c0e83821, #w-node-_3feba9e3-4d5b-f4fd-6f2e-359a5ee9e187-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c71-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c73-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c79-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c7b-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c7f-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c83-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c87-c0e83821, #w-node-_9a41517a-6d78-1728-7542-d6fa83666c8c-c0e83821 {
+    grid-area: Area-3;
+  }
+
+  #w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92d9-c0e83821 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92da-c0e83821 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_9721e481-ff33-d8e5-613f-67d69055b34f-c0e83821 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_9721e481-ff33-d8e5-613f-67d69055b351-c0e83821 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eea-c0e83821 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eeb-c0e83821 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_4776d5ad-b012-a5d1-7479-8858f67da1e1-c0e83821 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_4776d5ad-b012-a5d1-7479-8858f67da1e3-c0e83821 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc2-c0e83821 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc3-c0e83821 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_4a434f5e-ba0d-a392-c3ba-cee33b43b4d1-c0e83821 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_4a434f5e-ba0d-a392-c3ba-cee33b43b4d3-c0e83821 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b6-c0e83821 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b7-c0e83821 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_33f1f61e-58d3-af96-4d07-3ebc40210dc1-c0e83821 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_33f1f61e-58d3-af96-4d07-3ebc40210dc3-c0e83821 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d4d-c0e83821, #w-node-d85a686d-c27e-04ba-9c51-e88002f314a4-c0e83821 {
+    grid-area: Area;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0b-c0e83821, #w-node-_02a2bab0-a00c-be43-bca1-3d0f0176247c-c0e83821, #w-node-_6e77e837-3e37-4758-3849-699dfd843953-dee88876, #w-node-_4cbcddd8-a642-69fa-cdac-833455e24906-dee88876, #w-node-d59150a3-b59e-1bad-c744-ea6add724dc9-dee88876, #w-node-d0fe3368-33a1-0f7e-7cd5-d5721492a246-dee88876, #w-node-c6740618-d249-fe8e-d8b7-cf39546b60c7-dee88876, #w-node-d0fe3368-33a1-0f7e-7cd5-d5721492a265-dee88876, #w-node-_467a8169-dd71-8c1d-397c-6f5d17463b6a-dee88876, #w-node-c8e396e5-1681-2fec-17f3-751b7ca6688f-dee88876 {
+    grid-area: Area-3;
+  }
+
+  #w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92d9-dee88876 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92da-dee88876 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eea-dee88876 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eeb-dee88876 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc2-dee88876 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc3-dee88876 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b6-dee88876 {
+    grid-area: Area;
+    align-self: center;
+    justify-self: center;
+  }
+
+  #w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b7-dee88876 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d4d-dee88876, #w-node-d85a686d-c27e-04ba-9c51-e88002f314a4-dee88876 {
+    grid-area: Area;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0b-dee88876, #w-node-_02a2bab0-a00c-be43-bca1-3d0f0176247c-dee88876 {
+    grid-area: Area-3;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #w-node-a9ff8c04-291a-913c-f513-ee91ef1da665-99380aa0 {
+    grid-area: Area-2;
+  }
+
+  #w-node-a9ff8c04-291a-913c-f513-ee91ef1da66d-99380aa0 {
+    grid-area: Area-3;
+    align-self: auto;
+  }
+
+  #w-node-a9ff8c04-291a-913c-f513-ee91ef1da675-99380aa0 {
+    grid-area: Area-4;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d55-c0e83821 {
+    grid-area: Area-2;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d5c-c0e83821 {
+    grid-area: Area-3;
+    align-self: auto;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d63-c0e83821 {
+    grid-area: Area-4;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d55-dee88876 {
+    grid-area: Area-2;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d5c-dee88876 {
+    grid-area: Area-3;
+    align-self: auto;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d63-dee88876 {
+    grid-area: Area-4;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #w-node-a9ff8c04-291a-913c-f513-ee91ef1da665-99380aa0, #w-node-a9ff8c04-291a-913c-f513-ee91ef1da66d-99380aa0, #w-node-a9ff8c04-291a-913c-f513-ee91ef1da675-99380aa0 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_2e10e158-841e-2abc-4391-4b440f49e898-99380aa0, #w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92da-99380aa0, #w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eeb-99380aa0, #w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc3-99380aa0, #w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b7-99380aa0, #w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92da-c0e83821, #w-node-_9721e481-ff33-d8e5-613f-67d69055b351-c0e83821, #w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eeb-c0e83821, #w-node-_4776d5ad-b012-a5d1-7479-8858f67da1e3-c0e83821, #w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc3-c0e83821, #w-node-_4a434f5e-ba0d-a392-c3ba-cee33b43b4d3-c0e83821, #w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b7-c0e83821, #w-node-_33f1f61e-58d3-af96-4d07-3ebc40210dc3-c0e83821 {
+    grid-area: Area-2;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d55-c0e83821, #w-node-e6993650-c80d-3892-f051-9fbf199f1d5c-c0e83821, #w-node-e6993650-c80d-3892-f051-9fbf199f1d63-c0e83821 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_2e10e158-841e-2abc-4391-4b440f49e898-c0e83821, #w-node-_9d5fbdc8-8fc6-6089-7461-e2ead22f92da-dee88876, #w-node-df134e22-1d9e-37c7-ae1f-e2a3ca077eeb-dee88876, #w-node-_4b1b82b2-e02e-e572-f88c-fbbb3ecfecc3-dee88876, #w-node-_9b394d62-5e8e-8ec9-c809-eea48e1af3b7-dee88876 {
+    grid-area: Area-2;
+  }
+
+  #w-node-e6993650-c80d-3892-f051-9fbf199f1d55-dee88876, #w-node-e6993650-c80d-3892-f051-9fbf199f1d5c-dee88876, #w-node-e6993650-c80d-3892-f051-9fbf199f1d63-dee88876 {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+  }
+
+  #w-node-_03d46192-86d2-51d6-cab5-4bade5e32a77-dee88876 {
+    grid-area: Area-2;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  #w-node-_249a6366-b7ab-80e4-2643-9e4a66cabd87-99380aa0 {
+    grid-area: Area-2;
+  }
+
+  #w-node-_2e10e158-841e-2abc-4391-4b440f49e88d-99380aa0 {
+    grid-area: Area-5;
+  }
+
+  #w-node-_2e10e158-841e-2abc-4391-4b440f49e898-99380aa0 {
+    grid-area: Area-4;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0a-99380aa0 {
+    grid-area: Area-2;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0b-99380aa0 {
+    grid-area: Area;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0c-99380aa0 {
+    grid-area: Area-6;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0d-99380aa0 {
+    grid-area: Area-4;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0e-99380aa0 {
+    grid-area: Area-5;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0f-99380aa0 {
+    grid-area: Area-3;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e10-99380aa0 {
+    grid-area: Area-7;
+  }
+
+  #w-node-_249a6366-b7ab-80e4-2643-9e4a66cabd87-c0e83821 {
+    grid-area: Area-2;
+  }
+
+  #w-node-_2e10e158-841e-2abc-4391-4b440f49e88d-c0e83821 {
+    grid-area: Area-5;
+  }
+
+  #w-node-_2e10e158-841e-2abc-4391-4b440f49e898-c0e83821 {
+    grid-area: Area-4;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0a-c0e83821 {
+    grid-area: Area-2;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0b-c0e83821 {
+    grid-area: Area;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0c-c0e83821 {
+    grid-area: Area-6;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0d-c0e83821 {
+    grid-area: Area-4;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0e-c0e83821 {
+    grid-area: Area-5;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0f-c0e83821 {
+    grid-area: Area-3;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e10-c0e83821 {
+    grid-area: Area-7;
+  }
+
+  #w-node-_03d46192-86d2-51d6-cab5-4bade5e32a6d-dee88876 {
+    grid-area: Area-2;
+  }
+
+  #w-node-_03d46192-86d2-51d6-cab5-4bade5e32a6e-dee88876 {
+    grid-area: Area-5;
+  }
+
+  #w-node-_03d46192-86d2-51d6-cab5-4bade5e32a77-dee88876 {
+    grid-area: Area-4;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0a-dee88876 {
+    grid-area: Area-2;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0b-dee88876 {
+    grid-area: Area;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0c-dee88876 {
+    grid-area: Area-6;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0d-dee88876 {
+    grid-area: Area-4;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0e-dee88876 {
+    grid-area: Area-5;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e0f-dee88876 {
+    grid-area: Area-3;
+  }
+
+  #w-node-_5a64c73f-96cd-85da-d9b8-1f9da4df6e10-dee88876 {
+    grid-area: Area-7;
+  }
+}
+
+
+@font-face {
+  font-family: 'Alexandria Variablefont Wght';
+  src: url('../fonts/Alexandria-VariableFont_wght.woff2') format('woff2'), url('../fonts/Alexandria-VariableFont_wght.woff') format('woff'), url('../fonts/Alexandria-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
